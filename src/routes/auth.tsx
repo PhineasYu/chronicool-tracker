@@ -5,6 +5,7 @@ import { lovable } from "@/integrations/lovable/index";
 import portalHero from "@/assets/portal-hero.png";
 
 export const Route = createFileRoute("/auth")({
+  ssr: false,
   head: () => ({
     meta: [
       { title: "Sign in — Dimension-Locked" },
